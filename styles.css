@@ -1,0 +1,183 @@
+nav {
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    justify-content: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    z-index: 1;
+
+
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+a:hover {
+    background-color: wheat;
+}
+
+body {
+    background-color: aquamarine;
+}
+.product-container {
+    border: 2px black solid;
+    width: 800px;
+    box-sizing: border-box;
+    /*justify-content: center;*/
+    background-color: blanchedalmond;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    
+
+
+}
+
+.first-row{
+    display: flex;
+    
+
+}
+
+.promo-code {
+    width: 75%;
+    border: 1px rgb(222, 245, 12) solid;
+    background-color: rgb(155, 236, 155);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-image {
+    width: 50%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    
+
+}
+.product-detail {
+    width: 50%;
+    padding-right: 20px;
+}
+img {
+    width:100%;
+    height: auto;
+}
+.second-row {
+    display: flex;
+}
+.related-product {
+    position: relative; /* برای موقعیت‌دهی به متن */  
+    max-width: 200px; /* عرض حداکثر */  
+    margin: 10px; /* فاصله بین محصولات */  
+    overflow: hidden; /* جلوگیری از نمایش خارج از تصویر */  
+    
+    
+}
+.related-product img {  
+    width: 100%;
+    border-radius: 10px;
+}  
+.related-product-name {  
+    position: absolute; /* قرار دادن متن در بالای تصویر */  
+    bottom: 0; /* در پایین تصویر قرار می‌گیرد */  
+    left: 0;  
+    right: 0;  
+    background-color: rgba(0, 0, 0, 0.7);/*  پس‌زمینه نیمه شفاف */  
+    color: white; /* رنگ متن */  
+    padding: 5px; /* فاصله داخلی */  
+    text-align: center; /* وسط‌چین کردن متن */  
+    opacity: 0; /* در ابتدا پنهان است */  
+    transition: opacity 0.3s ease; /* انیمیشن برای تغییر شفافیت */  
+}  
+
+.related-product:hover .related-product-name {  
+    opacity: 1; 
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+
+}
+
+h3 {
+    padding-left: 10px;
+
+}
+
+.members-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.members-image {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.members-image img {
+    height: 250px;
+    border-radius: 50%;
+    width: 100%;
+    
+
+}
+.main {
+    background-color: bisque;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.members-title {
+    text-align: center;
+} 
+
+.image-container {  
+    position: relative; /* Establishes a positioning context */  
+    display: inline-block; /* Ensures the container fits around the image */  
+    width: 100%;
+}  
+
+.image-container img {  
+    display: block; /* Removes bottom space caused by inline images */  
+}  
+
+.caption {  
+    position: absolute; /* Removes the caption from the normal flow */  
+    top: 0; /* Positions the caption at the top of the container */  
+    right: 0; /* Positions the caption at the right of the container */  
+    background-color: rgba(1, 1, 1, 0.7); /* Optional: background for readability */  
+    padding: 5px; /* Optional: spacing around the text */  
+    font-size: 16px; /* Optional: font size */  
+    color: #f8f4f4; /* Optional: text color */  
+    opacity: 0; /* Initially hidden */  
+    transition: opacity 0.3s ease; /* Smooth transition for appearance */  
+}  
+
+.image-container:hover .caption {  
+    opacity: 1; /* Show caption on mouse hover */  
+}
+
+h2 {
+    padding-left: 20px;
+}
+
